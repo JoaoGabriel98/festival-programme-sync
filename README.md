@@ -90,3 +90,20 @@ Sync `generation=1`, then `generation=2`, and check the database is right. Then 
 ## Submitting
 
 A private git repo with your commits. Please don't squash.
+
+## Implementation notes
+
+The sync uses stable external IDs for films, venues and screenings, processes each
+screening in its own transaction, records each run, and lets API/infrastructure
+errors bubble up for Sidekiq retries. A PostgreSQL advisory lock prevents scheduled
+runs from overlapping. `sidekiq-scheduler` enqueues the job hourly.
+
+The screenings filter now targets the existing Turbo Frame, keeps rendering on the
+server, supports title search with PostgreSQL `ILIKE`, and eager-loads film and venue
+to avoid N+1 queries.
+
+I left disappearing upstream screenings untouched because the expected deletion
+policy is not defined. I also left the inherited `VenueSync` unchanged, but would
+change its name-based matching to `external_id` before reusing it. With more time I
+would clarify deletion semantics and add production alerting/backoff for failed or
+stale syncs.
