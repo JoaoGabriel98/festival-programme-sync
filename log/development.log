@@ -1,0 +1,453 @@
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+  [1m[36mActiveRecord::SchemaMigration Load (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Festival'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Festival'*/[0m
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Using vips to process variants requires the libvips library. Please install libvips using the instructions on the libvips website.
+Started GET "/screenings" for 192.168.65.1 at 2026-09-09 02:45:53 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Festival'*/[0m
+Processing by ScreeningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (3.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (5.4ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  [1m[36mFilm Load (1.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 12 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.6ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.4ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 9 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 10 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 11 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  Rendered screenings/index.html.erb within layouts/application (Duration: 411.5ms | GC: 69.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 476.9ms | GC: 87.6ms)
+Completed 200 OK in 1087ms (Views: 480.2ms | ActiveRecord: 75.0ms (42 queries, 22 cached) | GC: 119.2ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 192.168.65.1 at 2026-09-09 02:45:55 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/screenings" for 192.168.65.1 at 2026-09-09 02:46:03 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+Processing by ScreeningsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (0.9ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 12 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.9ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.3ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 9 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 10 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 11 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  Rendered screenings/index.html.erb within layouts/application (Duration: 301.6ms | GC: 16.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 306.6ms | GC: 16.5ms)
+Completed 200 OK in 320ms (Views: 286.8ms | ActiveRecord: 21.3ms (42 queries, 22 cached) | GC: 16.5ms)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 192.168.65.1 at 2026-09-09 02:46:03 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/screenings?date=&venue_id=3&q=&commit=Filter" for 192.168.65.1 at 2026-09-09 02:46:09 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+Processing by ScreeningsController#index as HTML
+  Parameters: {"date"=>"", "venue_id"=>"3", "q"=>"", "commit"=>"Filter"}
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (1.3ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" WHERE "screenings"."venue_id" = 3 ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 9 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  Rendered screenings/index.html.erb within layouts/application (Duration: 115.5ms | GC: 61.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 120.0ms | GC: 61.2ms)
+Completed 200 OK in 147ms (Views: 119.7ms | ActiveRecord: 5.4ms (8 queries, 3 cached) | GC: 68.3ms)
+
+
+Started GET "/screenings?date=&venue_id=&q=&commit=Filter" for 192.168.65.1 at 2026-09-09 02:48:39 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+Processing by ScreeningsController#index as HTML
+  Parameters: {"date"=>"", "venue_id"=>"", "q"=>"", "commit"=>"Filter"}
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (1.0ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 12 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (1.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.2ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (1.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 9 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 10 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 11 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  Rendered screenings/index.html.erb within layouts/application (Duration: 192.4ms | GC: 8.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 197.1ms | GC: 9.0ms)
+Completed 200 OK in 209ms (Views: 180.9ms | ActiveRecord: 18.4ms (42 queries, 22 cached) | GC: 9.0ms)
+
+
+Started GET "/screenings?date=2026-03-06&venue_id=&q=&commit=Filter" for 192.168.65.1 at 2026-09-09 02:48:53 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+Processing by ScreeningsController#index as HTML
+  Parameters: {"date"=>"2026-03-06", "venue_id"=>"", "q"=>"", "commit"=>"Filter"}
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (2.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (2.7ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" WHERE "screenings"."starts_at" BETWEEN '2026-03-06 00:00:00' AND '2026-03-06 23:59:59.999999' ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  Rendered screenings/index.html.erb within layouts/application (Duration: 21.8ms | GC: 1.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | GC: 1.3ms)
+Completed 200 OK in 48ms (Views: 23.7ms | ActiveRecord: 4.7ms (2 queries, 0 cached) | GC: 1.3ms)
+
+
+Started GET "/screenings?date=&venue_id=&q=&commit=Filter" for 192.168.65.1 at 2026-09-09 02:49:06 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+Processing by ScreeningsController#index as HTML
+  Parameters: {"date"=>"", "venue_id"=>"", "q"=>"", "commit"=>"Filter"}
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.9ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (1.1ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  [1m[36mFilm Load (1.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 12 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.9ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.7ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.1ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 6 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 7 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 1 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.6ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mCACHE Film Load (0.0ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 8 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.1ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 2 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.7ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 9 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 3 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.8ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 10 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 4 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  [1m[36mFilm Load (0.9ms)[0m  [1m[34mSELECT "films".* FROM "films" WHERE "films"."id" = 11 LIMIT 1 /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:44
+  [1m[36mCACHE Venue Load (0.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" WHERE "venues"."id" = 5 LIMIT 1[0m
+  ↳ app/views/screenings/index.html.erb:45
+  Rendered screenings/index.html.erb within layouts/application (Duration: 220.9ms | GC: 41.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 226.6ms | GC: 43.6ms)
+Completed 200 OK in 244ms (Views: 211.1ms | ActiveRecord: 17.1ms (42 queries, 22 cached) | GC: 43.6ms)
+
+
+Started GET "/screenings?date=2026-03-07&venue_id=&q=&commit=Filter" for 192.168.65.1 at 2026-09-09 02:49:25 +0000
+Cannot render console from 192.168.65.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1, ::ffff:127.0.0.0/::ffff:127.255.255.255
+Processing by ScreeningsController#index as HTML
+  Parameters: {"date"=>"2026-03-07", "venue_id"=>"", "q"=>"", "commit"=>"Filter"}
+  Rendering layout layouts/application.html.erb
+  Rendering screenings/index.html.erb within layouts/application
+  [1m[36mVenue Load (0.9ms)[0m  [1m[34mSELECT "venues".* FROM "venues" ORDER BY "venues"."name" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:17
+  [1m[36mScreening Load (1.0ms)[0m  [1m[34mSELECT "screenings".* FROM "screenings" WHERE "screenings"."starts_at" BETWEEN '2026-03-07 00:00:00' AND '2026-03-07 23:59:59.999999' ORDER BY "screenings"."starts_at" ASC /*action='index',application='Festival',controller='screenings'*/[0m
+  ↳ app/views/screenings/index.html.erb:42
+  Rendered screenings/index.html.erb within layouts/application (Duration: 17.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 24.6ms | ActiveRecord: 1.8ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
