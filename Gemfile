@@ -19,6 +19,8 @@ gem "tailwindcss-rails"
 
 # Background jobs [https://github.com/sidekiq/sidekiq]
 gem "sidekiq"
+# Recurring Sidekiq jobs
+gem "sidekiq-scheduler", "~> 6.0"
 # Redis client, used by Sidekiq
 gem "redis", ">= 4.0.1"
 # HTTP client used by the programme sync to talk to the (mock) external API

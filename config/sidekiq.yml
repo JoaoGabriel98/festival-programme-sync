@@ -1,0 +1,7 @@
+:scheduler:
+  :schedule:
+    programme_sync:
+      # Run the full programme sync at the top of every hour.
+      cron: "0 0 * * * *"
+      class: "ProgrammeSyncJob"
+      queue: default
